@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors | Atharv Pathak</title>
+    <link
+      rel="shortcut icon"
+      href="assets\favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <span class="left">Rock Paper Scissors</span>
+      <span class="right">Made by - Atharv Pathak</span>
+    </header>
+    <button class="reset">Reset</button>
+
+    <main>
+      <div class="selector">
+        <div class="img" id="div-img1">
+          <img src="assets/stone.png" alt="stone" class="circle" id="img1" />
+        </div>
+        <div class="img" id="div-img2">
+          <img src="assets/paper.png" alt="paper" class="circle" id="img2" />
+        </div>
+        <div class="img" id="div-img3">
+          <img
+            src="assets/scissors.png"
+            alt="scisssors"
+            class="circle"
+            id="img3"
+          />
+        </div>
+      </div>
+
+      <div class="div-hands">
+        <div class="left-hand">
+          <img src="assets/stone-L.png" alt="" class="hand-L" id="l0" />
+          <img src="assets/paper-L.png" alt="" class="hand-L" id="l1" />
+          <img src="assets/scissors-L.png" alt="" class="hand-L" id="l2" />
+        </div>
+        <div class="right-hand">
+          <img src="assets/stone-R.png" alt="" class="hand-R" id="r0" />
+          <img src="assets/paper-R.png" alt="" class="hand-R" id="r1" />
+          <img src="assets/scissors-R.png" alt="" class="hand-R" id="r2" />
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="text">Select among rock, paper and scissors</div>
+
+        <button class="next hidden">Next Round</button>
+        <div class="scorecard">
+          <div class="you-label">You</div>
+          <div class="robot-label">Robot</div>
+          <div class="you">0</div>
+          <div class="robot">0</div>
+        </div>
+      </div>
+    </main>
+    <footer>Created by - Atharv Pathak</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Mystery+Quest&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --background: #b08968 ;
+  --navbg: #52b69a;
+  --navtext: #ffffff;
+  --text: #2f3e46;
+  --navborder: #1a759f;
+  --selectorbg: #b5e48cd7;
+  --handbg: #2d6a4fca;
+  --textbg: #dee2e68b;
+  --scorebg: #2f3e46;
+  --buttonbg: #52b69a;
+  --buttontext: #ffffff;
+  --buttonborder: #2f3e46;
+  --scorebg: #52b69a;
+  --scoretext: #ffffff;
+  --scoreborder: #2f3e46;
+  --labelborder: #2f3e46;
+  --labelbg: #b5e48cca;
+  --selectorborder: #2f3e46;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+header {
+  font-family: "Edu NSW ACT Cursive", cursive !important;
+  color: var(--navtext);
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--navbg);
+  max-width: 80vw;
+  border: 5px solid var(--navborder);
+  border-radius: 15px;
+}
+
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  font-weight: 600;
+  font-size: 30px;
+}
+.right {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+main {
+  margin-top: 88px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+}
+
+.selector {
+  padding: 20px;
+  background: var(--selectorbg);
+  border: var(--selectorborder) 4px solid;
+  border-radius: 20px;
+  width: 50vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+#img1 {
+  width: 76px;
+}
+#img2 {
+  width: 110px;
+}
+#img3 {
+  width: 66px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  border: 2px solid var(--selectorborder);
+  border-radius: 50%;
+  background: var(--handbg);
+}
+
+.content {
+  padding: 20px;
+  font-size: 25px;
+  /* background: purple; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  padding: 20px;
+  font-size: 30px;
+  background: var(--textbg);
+  color: var(--text);
+  font-weight: 600;
+  /* font-style: italic; */
+  font-family: 'Mystery Quest';
+  border-radius: 20px;
+  /* width: 50vw; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scorecard {
+  /* font-family: ''; */
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px 15px 15px 15px;
+  background: var(--scorebg);
+  border: 2px solid var(--scoreborder);
+  border-radius: 17px;
+  margin: 0 auto;
+  font-size: 25px;
+  color: var(--scoretext);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.you,
+.robot {
+  border: 2px solid var(--labelborder);
+  background: var(--labelbg);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.div-hands {
+  position: absolute;
+  top: 0;
+  width: 80vw;
+  max-width: 80vw;
+  /* background: red; */
+  z-index: -1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.right-hand,
+.left-hand {
+  width: 200px;
+  height: 200px;
+}
+
+.hand-L {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: left center;
+
+  /* width: 100px; */
+}
+.animate-L {
+  animation: shake-L 2s ease-in-out;
+}
+.animate-R {
+  animation: shake-R 2s ease-in-out;
+}
+
+.hand-R {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: right center;
+
+  /* width: 100px; */
+}
+
+footer {
+  margin-top: 50px;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  background: #000;
+}
+
+@keyframes shake-L {
+  0% {
+    transform: rotate(0deg);
+  }
+  13.3% {
+    transform: rotate(-20deg);
+  }
+  26.6% {
+    transform: rotate(20deg);
+  }
+  39.9% {
+    transform: rotate(-20deg);
+  }
+  53.2% {
+    transform: rotate(20deg);
+  }
+  66.5% {
+    transform: rotate(-20deg);
+  }
+  79.8% {
+    transform: rotate(20deg);
+  }
+  93.1% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shake-R {
+  0% {
+    transform: rotate(0deg);
+  }
+  13.3% {
+    transform: rotate(20deg);
+  }
+  26.6% {
+    transform: rotate(-20deg);
+  }
+  39.9% {
+    transform: rotate(20deg);
+  }
+  53.2% {
+    transform: rotate(-20deg);
+  }
+  66.5% {
+    transform: rotate(20deg);
+  }
+  79.8% {
+    transform: rotate(-20deg);
+  }
+  93.1% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#l0 {
+  position: absolute;
+  top: -4px;
+}
+#l1 {
+  position: absolute;
+  top: -30px;
+}
+#l2 {
+  position: absolute;
+  top: 19px;
+}
+
+#r0 {
+  position: absolute;
+  top: 10px;
+}
+#r1 {
+  position: absolute;
+  top: -31px;
+}
+#r2 {
+  position: absolute;
+  top: 29px;
+}
+
+.next , .reset{
+  font-size: 20px;
+  padding: 5px 10px;
+  background: var(--buttonbg);
+  border: 2px solid var(--buttonborder);
+  border-radius: 17px;
+  font-weight: 600;
+  color: var(--buttontext);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.reset {
+  font-size: 20px;
+  position: absolute;
+  top: 36px;
+  right: 30px;
+}
