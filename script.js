@@ -164,7 +164,7 @@ buttons.forEach((button, index) => {
         document.querySelector(".input").classList.remove("hidden");
         point = null;
       }
-    }, 2010);
+    }, 2001);
 
     document.querySelector(".input").classList.add("hidden");
   });
