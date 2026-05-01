@@ -3,9 +3,10 @@ A classic game of **Rock, Paper, Scissors**
 <hr>
 
 ## Preview
-<img width="1889" height="974" alt="rps(1)" src="https://github.com/user-attachments/assets/f0711453-28d1-4899-9863-7c212d5f5f7b" />
+
+<img width="1889" height="972" alt="rps(1)" src="https://github.com/user-attachments/assets/0abfc65d-8b6d-4c1f-8275-1474038e0fc3" />
 <hr>
-<img width="1889" height="973" alt="rps(2)" src="https://github.com/user-attachments/assets/cde16ece-3b84-4693-aa24-e688ad4386cd" />
+<img width="1887" height="974" alt="rps(2)" src="https://github.com/user-attachments/assets/3ac7314c-611d-42e1-bf0e-bdc176d25ce8" />
 <hr>
 
 ## Overview
