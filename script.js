@@ -18,7 +18,7 @@ handR.forEach((hand) => {
   hand.classList.add("hidden");
 });
 
-document.querySelector('.input').readOnly = false;
+document.querySelector(".input").readOnly = false;
 
 const newRound = (player, computer) => {
   document.querySelector(".next").classList.add("hidden");
