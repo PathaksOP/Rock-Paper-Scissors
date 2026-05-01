@@ -161,8 +161,9 @@ buttons.forEach((button, index) => {
         }
         document.querySelector(".next").classList.add("hidden");
         document.querySelector(".selector").classList.add("hidden");
-        document.querySelector(".input").classList.remove("hidden");
+        // document.querySelector(".input").classList.remove("hidden");
         point = null;
+        document.querySelector("#points").value = "";
       }
     }, 2001);
 
