@@ -165,9 +165,9 @@ buttons.forEach((button, index) => {
       );
       if (winner !== -1) {
         if (winner === 1) {
-          document.querySelector(".text").innerHTML = "You won the game!";
+          document.querySelector(".text").innerHTML = "You won the match!";
         } else {
-          document.querySelector(".text").innerHTML = "You lost the game!";
+          document.querySelector(".text").innerHTML = "You lost the match!";
         }
         document.querySelector(".next").classList.add("hidden");
         document.querySelector(".selector").classList.add("hidden");
