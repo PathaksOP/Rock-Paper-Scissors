@@ -20,8 +20,8 @@
   --labelborder: #2f3e46;
   --labelbg: #b5e48cca;
   --selectorborder: #2f3e46;
-  --input-readonly-bg: #2f3e46;
-  --input-readonly-border: #2f3e46;
+  --input-readonly-bg: #bbbbbba5;
+  --input-readonly-border: #1a9f87c4;
 }
 
 * {
