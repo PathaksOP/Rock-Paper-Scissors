@@ -41,6 +41,7 @@ const reset = (player, computer, newRound) => {
   document.querySelector(".robot").innerHTML = "0";
   document.querySelector("#points").value = "";
   document.querySelector(".input").classList.remove("hidden");
+  document.querySelector("#points").readOnly = false;
 };
 
 const randomNo = () => Math.floor(Math.random() * 3);
@@ -109,6 +110,7 @@ document.querySelector(".reset").addEventListener("click", () => {
 });
 
 document.querySelector("#submit").addEventListener("click", () => {
+  document.querySelector("#points").readOnly = true;
   point = parseInt(document.querySelector("#points").value);
 });
 
