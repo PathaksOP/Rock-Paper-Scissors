@@ -5,12 +5,20 @@ let handL = document.querySelectorAll(".hand-L");
 let handR = document.querySelectorAll(".hand-R");
 let buttons = document.querySelectorAll(".img");
 
+const input = document.querySelector("#points");
+
+input.addEventListener("input", () => {
+  input.value = input.value.replace(/[^0-9]/g, "");
+});
+
 handL.forEach((hand) => {
   hand.classList.add("hidden");
 });
 handR.forEach((hand) => {
   hand.classList.add("hidden");
 });
+
+document.querySelector('.input').readOnly = false;
 
 const newRound = (player, computer) => {
   document.querySelector(".next").classList.add("hidden");

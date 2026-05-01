@@ -20,6 +20,8 @@
   --labelborder: #2f3e46;
   --labelbg: #b5e48cca;
   --selectorborder: #2f3e46;
+  --input-readonly-bg: #2f3e46;
+  --input-readonly-border: #2f3e46;
 }
 
 * {
@@ -465,4 +467,14 @@ footer {
   font-weight: 600;
   color: var(--buttontext);
   cursor: pointer;
+}
+
+button:active , input#submit:active {
+  /* background-color: red !important; */
+  transform: scale(0.95) !important;
+}
+
+input#points:read-only {
+  background-color: var(--input-readonly-bg) !important;
+  border: 2px solid var(--input-readonly-border) !important;
 }
