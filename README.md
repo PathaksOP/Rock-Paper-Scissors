@@ -40,6 +40,13 @@ A game of rock, paper, scissors against a computer
   * To reset the score, click the **"Reset"** button
 <hr>
 
+## Tech used
+* HTML
+* CSS
+* JS
+<hr>
+
 ## Link
 ### Click here: [Rock-Paper-Scissors_by-PathaksOP](<https://pathaksop.github.io/Rock-Paper-Scissors/>)
 #### Link: https://pathaksop.github.io/Rock-Paper-Scissors/
+<hr>
